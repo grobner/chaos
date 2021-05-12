@@ -33,6 +33,8 @@
 
 ![分岐図の生成結果](logistic/test.png)
 
+プログラムは[こちら](logistic/test.cpp)
+
 また、初期値をx=0.04で固定して、aごとの結果を出力した。横軸はステップ数、縦軸が得られた値である。それぞれの結果を直線で結んである。
 
 #### a=0.8
@@ -55,3 +57,13 @@
 
 #### a=4.0
 ![a=4.0の場合](logistic/4.png)
+
+
+プログラムは[こちら](logistic/test2.cpp)
+
+### duffing方程式
+
+![duffing eq](duffing/duffing2.png)
+
+プログラムは
+[こちら](duffing/duffing.cpp)
