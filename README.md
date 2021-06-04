@@ -34,7 +34,7 @@
 ![分岐図の生成結果](logistic/test.png)
 
 また、3.5から4までを拡大すると、次のようになる。
-![分岐図の生成結果][logitic/test2.png]
+![分岐図の生成結果](logistic/test2.png)
 
 プログラムは[こちら](logistic/test.cpp)
 
