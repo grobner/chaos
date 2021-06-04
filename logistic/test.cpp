@@ -49,6 +49,7 @@ int main() {
 
   rep(i,n){
     a = 3.00 + (double)i/1000;
+    if(a<3.5)continue;
     rep(j,steps){
       ofs << a << " " << ans[i][j] << " " << endl;
     }
