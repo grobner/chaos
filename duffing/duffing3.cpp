@@ -57,14 +57,17 @@ int main() {
   cout << "Specify the value of v_0" << endl;
   cin >> v;
 
-
+  int m = 0;
   h = a/n;
   cout << h << endl;
   ofstream ofs(filename);
   rep(i,n+1){
     t = h * i;
-    if(x==ofs << x << " " << v << endl;
-    cout << t << endl;
+    if(t>=m*PI){
+      ofs << x << " " << v << endl;
+      m++;
+      cout << t << endl;
+    }
     k1 = h * f(t,x,v);
     l1 = h * g(t,x,v);
     k2 = h * f(t+h/2,x+l1/2,v+k1/2);
