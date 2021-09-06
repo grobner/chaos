@@ -42,30 +42,32 @@ double g(double t, double x, double v){
 int main() {
   cout << fixed << setprecision(10);
   double a,h;
-  int n;
+  int n,m;
   double x,v,t;
   double k,k1,k2,k3,k4;
   double l,l1,l2,l3,l4;
   string filename = "duffing.dat";
 
-  cout << "Specify the value of a" << endl;
-  cin >> a;
-  cout << "Specify the number of steps" << endl;
+  cout << "Specify the value of m (length)" << endl;
+  cin >> m;
+
+  cout << "Specify the value of n (分割数)" << endl;
   cin >> n;
+
+  a = 2 * PI;
+
   cout << "Spefify the value of x_0" << endl;
   cin >> x;
   cout << "Specify the value of v_0" << endl;
   cin >> v;
 
-  int m = 0;
   h = a/n;
   cout << h << endl;
   ofstream ofs(filename);
-  rep(i,n+1){
+  rep(i,m*n+1){
     t = h * i;
-    if(t>=m*PI){
+    if(i%n==0){
       ofs << x << " " << v << endl;
-      m++;
       cout << t << endl;
     }
     k1 = h * f(t,x,v);
